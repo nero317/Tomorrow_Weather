@@ -8,7 +8,7 @@ const WeatherForecast = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const CITY = "Seongbuk-gu";
+  const CITY = "Seongbuk-gu"; //성북구 기준
   const COUNTRY_CODE = "KR";
 
   useEffect(() => {
