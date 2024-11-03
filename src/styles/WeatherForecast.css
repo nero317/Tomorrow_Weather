@@ -26,10 +26,13 @@
   gap: 16px;
 }
 
-.temperature {
-  font-size: 24px;
-  font-weight: bold;
+.thermometer-sun {
   color: red;
+}
+
+.temperature {
+  font-size: 36px;
+  font-weight: bold;
 }
 
 .info-grid {
@@ -51,6 +54,5 @@
 .info-icon {
   width: 20px;
   height: 20px;
-  color: gray;
   margin-bottom: 4px;
 }

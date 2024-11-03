@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import WeatherIcon from "./WeatherIcon";
 import "../styles/WeatherForecast.css";
 import WeatherInfoGrid from "./WeatherInfoGrid";
+import { ThermometerSun } from "lucide-react";
 
 const WeatherForecast = () => {
   const [weather, setWeather] = useState(null);
@@ -71,11 +72,13 @@ const WeatherForecast = () => {
     <div className="weather-card">
       <div className="header">
         <h2 className="title">내일의 날씨</h2>
-        <p className="data">{weather.date}</p>
+        <p className="date">{weather.date}</p>
       </div>
       <div className="content">
         <WeatherIcon condition={weather.condition} />
-        <div className="temperture">
+        <div className="temperature">
+          <ThermometerSun className="thermometer-sun" size={30} />
+          &nbsp;
           <span>{weather.temperature}°C</span>
         </div>
         <WeatherInfoGrid

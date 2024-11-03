@@ -1,23 +1,29 @@
 import React from "react";
-import { Droplet, Wind, CloudRain } from "lucide-react";
+import { Droplets, Wind, CloudRain } from "lucide-react";
 
 const WeatherInfoGrid = ({ humidity, windSpeed, precipitation }) => {
   return (
     <div className="info-grid">
       <div className="info-item">
-        <Droplet className="info-icon" />
+        <Droplets className="info-icon" style={{ color: "lightblue" }} />
         <span>습도</span>
-        <span>{humidity}%</span>
+        <span>
+          <strong>{humidity}%</strong>
+        </span>
       </div>
       <div className="info-item">
-        <Wind className="info-icon" />
+        <Wind className="info-icon" style={{ color: "cadetblue" }} />
         <span>풍속</span>
-        <span>{windSpeed}m/s</span>
+        <span>
+          <strong>{windSpeed}m/s</strong>
+        </span>
       </div>
       <div className="info-item">
-        <CloudRain className="info-icon" />
+        <CloudRain className="info-icon" style={{ color: "blue" }} />
         <span>강수확률</span>
-        <span>{precipitation}%</span>
+        <span>
+          <strong>{precipitation}%</strong>
+        </span>
       </div>
     </div>
   );
