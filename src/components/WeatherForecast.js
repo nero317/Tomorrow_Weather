@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import WeatherIcon from "./WeatherIcon";
-import "../styles/WeatherForecast.css";
 import WeatherInfoGrid from "./WeatherInfoGrid";
 import { ThermometerSun } from "lucide-react";
 

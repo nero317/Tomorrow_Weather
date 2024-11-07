@@ -11,7 +11,7 @@ import {
 const WeatherIcon = (condition) => {
   switch (condition) {
     case "clear":
-      return <Sun style={{ width: "48px", height: "48px", color: "yellow" }} />;
+      return <Sun style={{ width: "48px", height: "48px", color: "gold" }} />;
     case "clouds":
       return <Cloud style={{ width: "48px", height: "48px", color: "gray" }} />;
     case "rain":
@@ -38,7 +38,7 @@ const WeatherIcon = (condition) => {
         />
       );
     default:
-      return <Sun style={{ width: "48px", height: "48px", color: "yellow" }} />;
+      return <Sun style={{ width: "48px", height: "48px", color: "gold" }} />;
   }
 };
 
