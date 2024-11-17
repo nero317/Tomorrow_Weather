@@ -9,36 +9,38 @@ import {
 } from "lucide-react";
 
 const WeatherIcon = (condition) => {
+  const iconStyle = {width: "48px", height: "48px"};
+
   switch (condition) {
     case "clear":
-      return <Sun style={{ width: "48px", height: "48px", color: "gold" }} />;
+      return <Sun style={{ ...iconStyle, color: "gold" }} />;
     case "clouds":
-      return <Cloud style={{ width: "48px", height: "48px", color: "gray" }} />;
+      return <Cloud style={{ ...iconStyle, color: "gray" }} />;
     case "rain":
       return (
-        <CloudRain style={{ width: "48px", height: "48px", color: "blue" }} />
+        <CloudRain style={{ ...iconStyle, color: "blue" }} />
       );
     case "drizzle":
       return (
         <CloudDrizzle
-          style={{ width: "48px", height: "48px", color: "lightblue" }}
+          style={{ ...iconStyle, color: "lightblue" }}
         />
       );
     case "fog":
     case "mist":
       return (
         <CloudFog
-          style={{ width: "48px", height: "48px", color: "lightgray" }}
+          style={{ ...iconStyle, color: "lightgray" }}
         />
       );
     case "thunderstorm":
       return (
         <CloudLightning
-          style={{ width: "48px", height: "48px", color: "purple" }}
+          style={{ ...iconStyle, color: "purple" }}
         />
       );
     default:
-      return <Sun style={{ width: "48px", height: "48px", color: "gold" }} />;
+      return <Sun style={{ ...iconStyle, color: "gold" }} />;
   }
 };
 
