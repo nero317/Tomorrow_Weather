@@ -58,7 +58,7 @@ const WeatherForecast = () => {
   }, []);
 
   if (loading) {
-    return <div className="weather-card">날씨 정보를 불러오는 중</div>;
+    return <div className="weather-card-loading">날씨 정보를 불러오는 중</div>;
   }
 
   if (error) {

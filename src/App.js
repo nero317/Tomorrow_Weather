@@ -4,7 +4,9 @@ import WeatherForecast from "./components/WeatherForecast";
 function App() {
   return (
     <div className="App">
-      <WeatherForecast />
+      <div className="Background">
+        <WeatherForecast />
+      </div>
     </div>
   );
 }
